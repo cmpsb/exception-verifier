@@ -1,0 +1,9 @@
+image: openjdk:11-jdk-slim
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - ./gradlew check
